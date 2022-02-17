@@ -6,7 +6,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { Button } from "./Button"
 import { ImLocation } from "react-icons/im"
 
-function Trips( {heading} ) {
+const Trips = ( {heading} ) => {
   const data = useStaticQuery(graphql`
     query Trips {
       allTripsJson {
@@ -28,7 +28,6 @@ function Trips( {heading} ) {
     <ProductsContainer>
       <ProductsHeading>{heading}</ProductsHeading>
       <ProductsWraper>
-        {/* {getTrips(data)} */}
         {data.allTripsJson.nodes.map((item, index) => (
           <ProductCard key={index}>
             <ProductImage
