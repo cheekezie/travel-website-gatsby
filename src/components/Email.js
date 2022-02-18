@@ -75,12 +75,11 @@ width: 100%;
     @media screen and (max-width: 768px) {
         display: flex;
         flex-direction: column;
-        pad: 0 1rem;
+        padding: 0 1rem;
         input{
-            width: 100%;
             margin: 0 0 1rem 0;
         }
-        button{
+        button, input{
             width: 100%;
             min-width: 350px;
         }
