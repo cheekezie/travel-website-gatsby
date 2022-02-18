@@ -5,6 +5,8 @@ export const Colors = {
     layoutBg: '#0C0C0C',
     lightGrey: '#faf6f6',
     white: '#fff',
+    blue: "#047BF1",
+    icon2: "#F34F2E",
     black: '#000000',
     grey1: '#a9b3c1',
     grey2: '#3B3B3B',
