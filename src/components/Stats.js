@@ -77,9 +77,7 @@ export const Wrapper = styled.div`
 export const StatBox = styled.div`
     height: 100%;
     width: 100%;
-    padding: 2rem;
     transition: .3s;
-    margin: 0 -1.5rem;
 `
 export const StatBoxInner = styled.div`
     padding: 1.5rem;
