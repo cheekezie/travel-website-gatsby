@@ -28,7 +28,7 @@ export const EmailContainer = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    padding: 5rem 0;
+    padding: ${Layout.basePadding};
     width: 100%;
     display: flex;
     justify-content: center;
@@ -52,11 +52,14 @@ export const EmailContent = styled.div`
         margin-bottom: 2rem;
     }
     form{
-        z-index: 9;
+        z-index: 10;
+        width: 100%;
     }
 `
 export const FormWrap = styled.div`
-width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     input{
         width: 350px;
         padding: 0 1.5rem;
@@ -81,7 +84,6 @@ width: 100%;
         }
         button, input{
             width: 100%;
-            min-width: 350px;
         }
     }
 `
