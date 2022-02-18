@@ -10,12 +10,12 @@ const Stats = () => {
         {
          icon: (<GiEarthAfricaEurope css={`color: ${Colors.blue};`} />),
          title: "Over 100 Destinations",
-         desc: "We have over 100 destinations covered"
+         desc: "Travel to over 100 destinations"
         },
         {
          icon: (<MdAirplanemodeActive css={`color: ${Colors.orange};`} />),
-         title: "Over 1 million trips made",
-         desc: "Travel to over 100 destinations"
+         title: "Over 1 Million Trips",
+         desc: "We have completed over 1 millions trips"
         },
         {
          icon: (<MdTimer css={`color: ${Colors.primary};`} />),
@@ -35,9 +35,11 @@ const Stats = () => {
         <Wrapper>
             {StatsData.map((item, index) => (
                 <StatBox key={index}>
-                    <Icon>{item.icon}</Icon>
-                    <StatHeader>{item.title}</StatHeader>
-                    <StatDesc>{item.desc}</StatDesc>
+                    <StatBoxInner>
+                        <Icon>{item.icon}</Icon>
+                        <StatHeader>{item.title}</StatHeader>
+                        <StatDesc>{item.desc}</StatDesc>
+                    </StatBoxInner>
                 </StatBox>
             ))}
         </Wrapper>
@@ -77,7 +79,13 @@ export const StatBox = styled.div`
     width: 100%;
     padding: 2rem;
     transition: .3s;
+    margin: 0 -1.5rem;
 `
+export const StatBoxInner = styled.div`
+    padding: 1.5rem;
+   
+`
+
 export const StatHeader = styled.h3`
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     margin-bottom: .5rem;
