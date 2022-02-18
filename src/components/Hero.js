@@ -32,7 +32,7 @@ export const HeroContainer = styled.div`
     padding: 0 1rem;
     position: relative;
     align-items: center;
-    margin-top: calc(-80px - .5rem);
+    margin-top: -80px;
     &::before{
         content: '';
         position: absolute;

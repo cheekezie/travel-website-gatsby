@@ -9,18 +9,20 @@ import { Button } from './Button'
 const Header = () => {
   return (
     <Nav>
-      <NavLink to="/"> EXPLORIX</NavLink>
-      <NavMenu>
-        {menuData.map((item, index)=>(
-          <NavLink to={item.link} key={index}>
-            {item?.title}
-          </NavLink>
-        ))}
-      </NavMenu>
-      <NavBtn >
-        <Button primary="true" round="true" to="/trips">Book a trip</Button>
-      </NavBtn>
-      <Hamburger />
+      <NavContainer>
+        <NavLink to="/"> EXPLORIX</NavLink>
+        <NavMenu>
+          {menuData.map((item, index)=>(
+            <NavLink to={item.link} key={index}>
+              {item?.title}
+            </NavLink>
+          ))}
+        </NavMenu>
+        <NavBtn >
+          <Button primary="true" round="true" to="/trips">Book a trip</Button>
+        </NavBtn>
+        <Hamburger />
+      </NavContainer>
     </Nav>
   )
 }
@@ -30,11 +32,15 @@ export default Header
 export const Nav = styled.nav`
   background: transparent;
   height: 80px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem  calc((100vw - 1300px) / 2);
+  padding: 0  calc((100vw - 1300px) / 2);
   position: relative;
   z-index: 100;
+`
+export const NavContainer = styled.div`
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `
 export const NavMenu = styled.ul`
    color: ${Colors.white};

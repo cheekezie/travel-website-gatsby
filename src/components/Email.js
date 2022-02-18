@@ -59,7 +59,7 @@ export const FormWrap = styled.div`
 width: 100%;
     input{
         width: 350px;
-        padding: 1rem 1.5rem;
+        padding: 0 1.5rem;
         height: 48px;
         border-radius: 50px;
         margin-right: 1rem;
