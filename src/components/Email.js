@@ -52,7 +52,7 @@ export const EmailContent = styled.div`
         margin-bottom: 2rem;
     }
     form{
-        z-index: 10;
+        z-index: 9;
     }
 `
 export const FormWrap = styled.div`
