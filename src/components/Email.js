@@ -86,7 +86,6 @@ export const FormWrap = styled.div`
         }
         button, input{
             width: 100%;
-            min-width: 350px;
         }
     }
 `

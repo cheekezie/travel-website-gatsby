@@ -30,7 +30,7 @@ const Stats = () => {
      ]
      
   return (
-    <StatsContainer>
+    <StatsContainer >
         <Heading>Why choose us</Heading>
         <Wrapper>
             {StatsData.map((item, index) => (
@@ -52,7 +52,7 @@ export default Stats
 export const StatsContainer = styled.div`
     width: 100%;
     color: ${Colors.black};
-    background: ${Colors.white};
+    /* background: ${Colors.white}; */
     display: flex;
     justify-content: center;
     flex-direction: column;
