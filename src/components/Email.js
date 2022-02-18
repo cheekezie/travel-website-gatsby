@@ -59,7 +59,6 @@ export const EmailContent = styled.div`
 export const FormWrap = styled.div`
     display: flex;
     justify-content: center;
-    width: 100%;
     input{
         width: 350px;
         padding: 0 1.5rem;
