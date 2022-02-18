@@ -12,7 +12,7 @@ const Email = () => {
             <p>Sign up for a newsletter to get exclusive offers on your first trip</p>
             <form action='#'>
                 <FormWrap>
-                    <div><input type="email" placeholder='Enrer your email' id='email' /></div>
+                    <InputWrap><input type="email" placeholder='Enrer your email' id='email' /></InputWrap>
                     <Button as="button" type='submit' primary="true" round="true">Sign Up</Button>
                 </FormWrap>
             </form>
@@ -55,6 +55,9 @@ export const EmailContent = styled.div`
         z-index: 10;
         width: 100%;
     }
+`
+export const InputWrap = styled.div`
+    display: flex;
 `
 export const FormWrap = styled.div`
     display: flex;
