@@ -30,7 +30,7 @@ const Stats = () => {
      ]
      
   return (
-    <StatsContainer >
+    <StatsContainer>
         <Heading>Why choose us</Heading>
         <Wrapper>
             {StatsData.map((item, index) => (
