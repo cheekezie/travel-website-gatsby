@@ -1,5 +1,5 @@
 import * as React from "react"
-import Header from "../components/Header"
+import Header from './header'
 import { GlobalStyle } from './styles/GlobalStyles'
 
 
