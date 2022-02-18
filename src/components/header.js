@@ -41,6 +41,9 @@ export const NavContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+     padding-top: 1.7rem;
+   }
 `
 export const NavMenu = styled.ul`
    color: ${Colors.white};
