@@ -28,7 +28,7 @@ export const EmailContainer = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    padding: ${Layout.basePadding};
+    padding: 5rem 0;
     width: 100%;
     display: flex;
     justify-content: center;
